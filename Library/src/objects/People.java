@@ -1,6 +1,6 @@
 package objects;
 
-public abstract class People implements Crudable {
+public abstract class People {
 	private String name;
 	private int age;
 	private String occupation;

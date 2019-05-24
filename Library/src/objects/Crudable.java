@@ -2,11 +2,12 @@ package objects;
 
 public interface Crudable {
 
-	public void create();
+	public void create(Object input);
 
-	public String read();
+	public String read(Object input);
 
-	public void update();
+	public void update(Object input, Object change);
 
-	public void delete();
+	public void delete(Object input);
+
 }

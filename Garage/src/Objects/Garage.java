@@ -5,12 +5,10 @@ import java.util.ArrayList;
 public class Garage {
 	private ArrayList<Vehicle> garage = new ArrayList<Vehicle>();
 
-	// setter
 	public void setGarageList(ArrayList<Vehicle> garage) {
 		this.garage = garage;
 	}
 
-	// getter
 	public ArrayList<Vehicle> getGarageList() {
 		return garage;
 	}

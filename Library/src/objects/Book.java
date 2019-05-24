@@ -4,13 +4,22 @@ public class Book extends Item {
 
 	private String title;
 	private String author;
-	private String Genre;
+	private String genre;
+	private String edition;
 
 	public Book(String type, int iID, int quantity, String title, String author, String genre) {
 		super(type, iID, quantity);
 		this.title = title;
 		this.author = author;
-		Genre = genre;
+		this.genre = genre;
+	}
+
+	public Book(String type, int iID, int quantity, String title, String author, String genre, String edition) {
+		super(type, iID, quantity);
+		this.title = title;
+		this.author = author;
+		this.genre = genre;
+		this.edition = edition;
 	}
 
 	public String getTitle() {
@@ -30,11 +39,19 @@ public class Book extends Item {
 	}
 
 	public String getGenre() {
-		return Genre;
+		return genre;
 	}
 
 	public void setGenre(String genre) {
-		Genre = genre;
+		this.genre = genre;
+	}
+
+	public String getEdition() {
+		return edition;
+	}
+
+	public void setEdition(String edition) {
+		this.edition = edition;
 	}
 
 }

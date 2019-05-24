@@ -1,6 +1,6 @@
 package objects;
 
-public class Customer implements Crudable {
+public class Customer {
 	private int cid;
 	private String joinDate;
 	private boolean member;
@@ -34,30 +34,6 @@ public class Customer implements Crudable {
 
 	public void setMember(boolean member) {
 		this.member = member;
-	}
-
-	@Override
-	public void create() {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public String read() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void update() {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void delete() {
-		// TODO Auto-generated method stub
-
 	}
 
 }
